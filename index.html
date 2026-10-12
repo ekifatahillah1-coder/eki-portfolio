@@ -1,62 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofolio Eki</title>
+  <title>Eki.Dev | Portfolio</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background: #0b1120;
-      color: #f1f5f9;
       font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #f1f5f9;
       line-height: 1.7;
     }
+
     header {
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #263449;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #263047;
     }
-    header h2, .blue { color: #38bdf8; }
-    nav { margin-top: 10px; }
+
+    .logo {
+      color: #38bdf8;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
     nav a {
       color: #cbd5e1;
       text-decoration: none;
-      margin: 0 7px;
-      font-size: 13px;
+      margin-left: 15px;
+      font-size: 14px;
     }
-    section { padding: 45px 22px; max-width: 750px; margin: auto; }
-    .hero { text-align: center; padding-top: 75px; padding-bottom: 75px; }
-    .hero p { color: #94a3b8; margin-top: 15px; }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 100px 24px;
+    }
+
+    .tag {
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 8vw, 64px);
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    h1 span {
+      color: #38bdf8;
+    }
+
+    .desc {
+      color: #aab6cc;
+      max-width: 580px;
+      margin-bottom: 30px;
+    }
+
     .button {
       display: inline-block;
-      margin-top: 22px;
-      padding: 10px 20px;
-      background: #0284c7;
-      color: white;
-      text-decoration: none;
+      background: #38bdf8;
+      color: #07111f;
+      padding: 12px 22px;
       border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
     }
+
+    section {
+      margin-top: 70px;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      color: #38bdf8;
+    }
+
     .card {
-      background: #111c30;
-      border: 1px solid #263449;
-      padding: 20px;
-      margin-top: 15px;
+      background: #121a2d;
+      border: 1px solid #263047;
       border-radius: 12px;
+      padding: 22px;
+      margin-top: 14px;
     }
-    .card p { color: #94a3b8; margin-top: 8px; }
+
     footer {
       text-align: center;
       padding: 25px;
-      color: #94a3b8;
-      border-top: 1px solid #263449;
+      color: #8290a8;
+      border-top: 1px solid #263047;
     }
   </style>
 </head>
 <body>
   <header>
-    <h2>EKI<span class="blue">.DEV</span></h2>
+    <div class="logo">Eki.Dev</div>
     <nav>
       <a href="#tentang">Tentang</a>
       <a href="#skill">Skill</a>
@@ -64,45 +111,39 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <p>HALO, SELAMAT DATANG!</p>
-    <h1>Saya Eki,<br><span class="blue">Calon Web Developer</span></h1>
-    <p>Siswa TKJ yang sedang menjelajahi dunia teknologi dan coding.</p>
-    <a href="#tentang" class="button">Kenali Saya</a>
-  </section>
+  <main>
+    <p class="tag">PORTOFOLIO PRIBADI</p>
+    <h1>Halo, saya Eki.<br>Saya calon <span>Web Developer.</span></h1>
+    <p class="desc">
+      Saya siswa TKJ yang tertarik pada teknologi, komputer,
+      dan dunia pengembangan website. Ini adalah perjalanan
+      saya untuk terus belajar dan berkembang.
+    </p>
+    <a class="button" href="#tentang">Kenali Saya</a>
 
-  <section id="tentang">
-    <h2>Tentang Saya</h2>
-    <div class="card">
-      <p>Saya siswa jurusan Teknik Komputer dan Jaringan (TKJ). Saya tertarik pada komputer, teknologi, dan dunia pemrograman. Website ini adalah proyek pertama saya yang dibuat melalui HP Android.</p>
-    </div>
-  </section>
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <div class="card">
+        Saya sedang belajar teknologi jaringan komputer dan
+        pengembangan web. Saya ingin membuat karya digital
+        yang bermanfaat.
+      </div>
+    </section>
 
-  <section id="skill">
-    <h2>Skill Saya</h2>
-    <div class="card">
-      <h3>💻 Komputer</h3>
-      <p>Mempelajari perangkat keras dan perangkat lunak.</p>
-    </div>
-    <div class="card">
-      <h3>🌐 Jaringan</h3>
-      <p>Mempelajari dasar jaringan komputer.</p>
-    </div>
-    <div class="card">
-      <h3>⌨️ HTML & CSS</h3>
-      <p>Sedang membangun website pertama.</p>
-    </div>
-  </section>
+    <section id="skill">
+      <h2>Skill yang Dipelajari</h2>
+      <div class="card">HTML · CSS · Jaringan Komputer · Teknologi</div>
+    </section>
 
-  <section id="proyek">
-    <h2>Proyek Pertama</h2>
-    <div class="card">
-      <h3>Website Portofolio</h3>
-      <p>Dibuat menggunakan HTML dan CSS melalui HP Android.</p>
-      <p>Status: Sedang dikembangkan 🚀</p>
-    </div>
-  </section>
+    <section id="proyek">
+      <h2>Proyek Saya</h2>
+      <div class="card">
+        <h3>Website Portofolio</h3>
+        <p>Website pribadi pertama saya yang dibuat menggunakan HTML dan CSS.</p>
+      </div>
+    </section>
+  </main>
 
-  <footer>© 2026 Eki.Dev | Terus belajar dan berkembang.</footer>
+  <footer>© 2026 Eki.Dev — Dibuat dengan semangat belajar.</footer>
 </body>
 </html>
